@@ -1,0 +1,12 @@
+version: '3.16'
+services:
+  postgres:
+    image: 'postgres:latest'
+    ports:
+      - '5432:5432'
+    volumes:
+      - ./data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=wtt
+      - POSTGRES_USER=yatyt
+      - POSTGRES_PASSWORD=12q3r45
